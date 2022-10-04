@@ -1,0 +1,10 @@
+body { padding-top: 70px; }
+
+.dynamic-text li{
+    list-style: none;
+}
+
+.dynamic-text li::after{
+    list-style: none;
+    animation: typing 3s steps(10) infinite;
+}
