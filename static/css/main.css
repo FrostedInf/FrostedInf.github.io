@@ -1,9 +1,20 @@
-body { padding-top: 70px; }
+/* GENERAL STYLES */
+body { 
+  padding-top: 70px; 
+  font-family: 'Roboto';
+}
 
+.icon-img{ 
+  display: inline-block;
+  width: 30px;
+}
+
+body li{
+  list-style: none;
+}
 #presentation {
    margin-top: 80px; 
    margin-bottom: 50px; 
-
 }
 
 .dynamic-text li{
@@ -23,3 +34,26 @@ body { padding-top: 70px; }
 .list-style-none li{
     display: inline-block;
 }
+/* STYLES FOR ABOUT ME ROW */
+
+.row-aboutme {
+  margin-bottom: 80px;
+  margin-top: 50px;
+}
+/* STYLES FOR WORK ROW */
+
+.row-works {
+  margin-bottom: 80px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+/* STYLES FOR FOOTER ROW */
+
+.row-footer {
+  margin-bottom: 80px;
+  margin-top: 50px;
+}
+
