@@ -4,94 +4,97 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
-        crossorigin="anonymous">
+        crossorigin="anonymous"> -->
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
         <link rel="stylesheet" href="static/css/main.css">
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-        <title>FrostInf</title>
+        <title>AnaFrost</title>
     </head>
     <body>
       <header>
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="/">AnaFrost</a>
-                </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                            <li><a href="#about">About </a></li>
-                            <li><a href="#works" class="page-scroll">Works</a></li>                      
-                            <li><a href="#skills" class="page-scroll">Skills</a></li>                      
-                            <li><a href="#contact" class="page-scroll">Contact</a></li>                      
-                    </ul>                                       
-                </div>
-            </div>
+        <nav>            
+          <ul class="navbar">
+            <li><a class="navbar-brand" href="/">AnaFrost</a></li>
+            <li><a href="#about">About </a></li>
+            <li><a href="#works" class="page-scroll">Works</a></li>                      
+            <li><a href="#skills" class="page-scroll">Skills</a></li>                      
+            <li><a href="#contact" class="page-scroll">Contact</a></li>                      
+          </ul>                                       
         </nav>  
       </header>
         <section id="presentation" class="container">
-            <div class="static-text">I am,</div>
-            <div class="dynamic-text"><li><span>Web Developer</span></li></div>
+            <div class="row-presentation">
+              <div class="static-text">I am,</div>
+              <div class="dynamic-text">Web Developer</div>
+            </div>
         </section>
         <section id="about" class="container">
+          <h1>About me</h1>
           <div class="row-aboutme">
-            <h1>About me</h1>
-            <p>My name is Ana Sofía() Hernández Enriquez, i am a web developer who enjoys creative and logic in every line of code.</p>
+            <p>My name is Ana Sofía Hernández Enriquez, i am a web developer who enjoys creative and logic in every line of code.</p>
             <p>I am developer in python, java, dart and javascript. I've recently been working with frameworks like 
-                flask to build RESTAPIs and cms applications. And Flutter to develop android applications.
+                flask to build RESTAPIs and CMS applications. And Flutter to develop android applications.
             </p>
           </div>
         </section>
         <section id="works" class="container">
             <h1>Works</h1>
             <div class="row justify-content-between row-works">
-                <div class="card col-md-4" style="width: 18rem;">
-                    <img class="card-img-top" src="..." alt="Card image cap">
+                <article class="card-works">
+                    <img class="card-img-top" src="./static/imgs/01.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Votation app</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="https://github.com/FrostedInf/votationappflask" class="btn btn-primary">Go to project</a>
+                        <h5 class="card-title">Votation app with flask using
+                          sockets</h5>
+                        <p class="card-text">An app to create votations on any
+                        topic at the same time with other people using sockets
+                        to have instant feedback from the other voters.</p>
+                        <div>
+                          <a href="https://github.com/FrostedInf/votationappflask" class="main-btn">Go to project</a>
+                        </div>
                     </div>
-                </div>
-                <div class="card col-md-4" style="width: 18rem;">
-                    <img class="card-img-top" src="..." alt="Card image cap">
+                </article>
+                <article class="card-works">
+                    <img class="card-img-top" src="./static/imgs/02.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Accesible app for deaf</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="https://github.com/FrostedInf/app-archeologic-accesible" class="btn btn-primary">Go to project</a>
+                        <h5 class="card-title">Accesible app for deafs and blinds on flutter</h5>
+                        <p class="card-text">This is a axemple app created with
+                        flutter using the accesible widgets that flutter provide
+                        to make accesible the app for blind people and a simple,
+                        visual design for deaf people.</p>
+                        <div>
+                          <a href="https://github.com/FrostedInf/app-archeologic-accesible" class="main-btn">Go to project</a>
+                        </div>
                     </div>
-                </div>
-                <div class="card col-md-4" style="width: 18rem;">
-                    <img class="card-img-top" src="..." alt="Card image cap">
+                </article>
+                <article class="card-works">
+                    <img class="card-img-top" src="./static/imgs/03.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Bookstore with flask</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="https://github.com/FrostedInf/book-store" class="btn btn-primary">Go to project</a>
+                        <p class="card-text">A web application for a bookstore
+                        created with flask</p>
+                        <div>                          
+                          <a href="https://github.com/FrostedInf/book-store" class="main-btn">Go to project</a>
+                        </div>                        
                     </div>
-                </div>
+                </article>
             </div>
         </section>
         <section id="skills" class="container">
-            <div class="row">
-                <h1>Skills</h1>
-                <div class="col-md-6">
+          <h1>Skills</h1>
+            <div class="row-skills">
+                <div>
                   <h2>Language</h2>
-                  <ul>
+                  <ul class="idioms-list">
                     <li>English</li>
                     <li>Chinese</li>
                   </ul>
                 </div>
-                <div class="col-md-6">
+                <div>
                   <h2>Programming language</h2>
-                  <ul>
+                  <ul class="programming-list">
                     <li>Javascript</li>
                     <li>Python</li>
                     <li>Java</li>
@@ -104,13 +107,24 @@
             </div>
         </section>
         <section id="contact" class="container">
-            <div class="row">
-                <h1>Contact</h1>
-                <div class="col-md-6">
+             <h1>Contact</h1>
+             <div class="row-contact">
+               <form class="contact-form" action="">     
+                  <label for="mail">Email</label>
+                  <input type="email" name="mail">                     
+                  <label for="fname">Full name</label>
+                  <input type="text" name="fname">
+                  <label for="message">Message</label>
+                  <textarea id="" name="message" cols="30" rows="10"></textarea>
+                  <input type="submit" value="Send">
+               </form>
+             </div>
+            <div class="row-social">
+                <div>
                       <h2><a href="">Linkedin</a>
                       </h2>                
                 </div>
-                <div class="col-md-6">
+                <div>
                     <h2>
                       <a href="">Github</a>
                       <img class="icon-img" src="static/svgs/github.svg" alt="githubicon">
@@ -118,14 +132,16 @@
                 </div>
             </div>
         </section>
-        <footer class="container">
-            <div class="row row-footer">
-                <ul class="list-style-none ">
-                    <li class="col-md-3"><span><a href="#about">About me</a></span></li> 
-                    <li class="col-md-3"><span><a href="#works">Works</a></span></li>
-                    <li class="col-md-3"><span><a href="#skills">Skills</a></span></li>
-                    <li class="col-md-3"><span><a href="#contact">Contact</a></span></li>
-                </ul>
+        <footer>
+            <div class="container">
+              <div class="row row-footer">
+                  <ul >
+                      <li class="col-md-3"><span><a href="#about">About me</a></span></li> 
+                      <li class="col-md-3"><span><a href="#works">Works</a></span></li>
+                      <li class="col-md-3"><span><a href="#skills">Skills</a></span></li>
+                      <li class="col-md-3"><span><a href="#contact">Contact</a></span></li>
+                  </ul>
+              </div>
             </div>
         </footer>
     </body>

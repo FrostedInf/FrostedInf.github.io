@@ -1,7 +1,30 @@
 /* GENERAL STYLES */
+
 body { 
-  padding-top: 70px; 
+  padding-top: 100px; 
   font-family: 'Roboto';
+  margin: 0;
+}
+
+:root{
+  --main-btn-fontcolor: #003B4A;
+  --section-bg-color: #F2D5DB;
+  --section-bg-skills: #80B4BF;
+}
+
+.main-btn{
+  background-color: var(--main-btn-color);
+  color: var(--main-btn-fontcolor);
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 5px 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  text-decoration: inherit;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
 }
 
 .icon-img{ 
@@ -9,38 +32,56 @@ body {
   width: 30px;
 }
 
-body li{
-  list-style: none;
+.container{
+  margin: 0px 50px;
 }
-#presentation {
-   margin-top: 80px; 
-   margin-bottom: 50px; 
-}
-
-.dynamic-text li{
-    list-style: none;
-}
-
-.dynamic-text li::after{
-    list-style: none;
-    animation: typing 3s steps(10) infinite;
-}
-
-.list-style-none {
-    list-style: none;
+/* STYLES NAVBAR */
+  
+  .navbar {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--section-bg-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .navbar li {
+    float: left;
+  }
+  .navbar li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+/* STYLES PRESENTATION SECTION */
+.row-presentation {
+  margin-bottom: 80px;
+  margin-top: 50px;  
 }
 
-.list-style-none li{
-    display: inline-block;
+/* STYLES FOR ABOUT ME SECTION */
+
+#about h1{
+  padding: 14px 16px;
+  background-color: var(--section-bg-color);
 }
-/* STYLES FOR ABOUT ME ROW */
 
 .row-aboutme {
   margin-bottom: 80px;
-  margin-top: 50px;
+  margin-top: 50px;  
 }
-/* STYLES FOR WORK ROW */
+
+
+/* STYLES FOR WORK SECTION */
+#works h1{
+  background-color: var(--section-bg-color);  
+  padding: 14px 16px;
+}
 
 .row-works {
   margin-bottom: 80px;
@@ -50,10 +91,143 @@ body li{
   flex-flow: row wrap;
 }
 
-/* STYLES FOR FOOTER ROW */
+.card-works{
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  width: 25%;
+}
 
-.row-footer {
+.card-body{  
+  padding: 20px 20px;
+}
+
+.card-body p{
+  height: 80px;
+}
+
+/* STYLES FOR Skills SECTION */
+
+#skills h1{
+  padding: 14px 16px;
+  background-color: var(--section-bg-skills);  
+}
+
+.row-skills {
   margin-bottom: 80px;
   margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+.idioms-list{
+  list-style-type: none;
+}
+.idioms-list li{
+  padding: 14px 16px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.programming-list{
+  list-style-type: none;
+}
+
+.programming-list li{
+  padding: 14px 16px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+/* STYLES FOR CONTACT SECTION */
+
+#contact h1{
+  padding: 14px 16px;
+  background-color: var(--section-bg-color);  
+}
+
+.row-contact {
+  margin-bottom: 80px;
+  margin-top: 50px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.contact-form{
+  width: 100%;
+}
+.contact-form input[type=text], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact-form input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact-form input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.contact-form input[type=submit]:hover {
+  background-color: #45a049;
+}
+/* STYLES FOR SOCIAL NETWORKS SECTION */
+
+.row-social {
+  margin-bottom: 80px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+.row-social a {
+  text-decoration: none;
+  color: black;
+}
+
+/* STYLES FOR FOOTER SECTION */
+footer{
+  background-color: var(--section-bg-color);
+}
+.row-footer {
+  padding-bottom: 80px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+footer ul{
+  list-style: none;
+}
+
+footer li{
+  display: inline;
+}
+
+footer li a{
+  text-decoration: none;
+  color: black;
+  padding: 14px 16px;
 }
 
